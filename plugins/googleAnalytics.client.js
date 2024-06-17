@@ -1,7 +1,7 @@
 import { useRuntimeConfig } from '#imports';
 
 export default defineNuxtPlugin(() => {
-  const { public: { gaId } } = useRuntimeConfig();
+  const { public: { scripts:{googleAnalytics:{id:GA_ID}} } } = useRuntimeConfig();
 
   if (!window.dataLayer) {
     window.dataLayer = [];
@@ -13,5 +13,5 @@ export default defineNuxtPlugin(() => {
 
   gtag('js', new Date());
 
-  gtag('config', gaId); // Use the environment variable
+  gtag('config', GA_ID); // Use the environment variable
 });
