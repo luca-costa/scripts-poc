@@ -18,7 +18,6 @@ export default defineNuxtConfig({
           id: process.env.NUXT_PUBLIC_SCRIPTS_GOOGLE_ANALYTICS_ID
         },
       },
-      gaId:process.env.GA_ID
     },
   },
 })
