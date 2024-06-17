@@ -9,6 +9,7 @@ gtag('event', 'page_view', {
 })
 </script>
 <template>
+    {{gtag()}}
     <div>
         Homepage
     </div>
