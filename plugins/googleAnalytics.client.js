@@ -1,6 +1,5 @@
 
 import { useRuntimeConfig } from '#imports';
-import { useRouter } from '@nuxtjs/composition-api';
 
 export default defineNuxtPlugin(() => {
   const { public: { gaId } } = useRuntimeConfig();
