@@ -1,12 +1,5 @@
 <script setup lang="ts">
-const { gtag, $script } = useScriptGoogleAnalytics({
-  id: useRuntimeConfig().public.scripts.googleAnalytics.id,
-});
-gtag("event", "page_view", {
-  page_title: "Home",
-  page_location: useRequestURL(),
-  page_path: "/",
-});
+usePageView()
 </script>
 <template>
   {{ useRuntimeConfig().public.scripts.googleAnalytics.id }}
