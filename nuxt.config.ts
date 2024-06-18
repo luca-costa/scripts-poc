@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     public: {
       scripts: {
         googleAnalytics: {
-          id: process.env.NUXT_PUBLIC_SCRIPTS_GOOGLE_ANALYTICS_ID
+          id: ''
         },
       },
     },
