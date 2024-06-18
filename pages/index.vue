@@ -4,7 +4,7 @@ const { gtag, $script } = useScriptGoogleAnalytics({
 });
 gtag("event", "page_view", {
   page_title: "Home",
-  page_location: "https://example.com",
+  page_location: useRequestURL(),
   page_path: "/",
 });
 </script>
